@@ -70,7 +70,7 @@ def autoRenderCycle(cycles):
         img_random = random.randint(0, len(bpy.data.images))
         print(img_random)
         if bpy.data.images[img_random].name == 'Render Result':
-            bpy.data.images.remove(bpy.data.images[img_random])
+            bpy.data.images.remove(bpy.data.images[img_random]) 
             img_random = random.randint(0, len(bpy.data.images))
             
         env_node.image = bpy.data.images[img_random]
